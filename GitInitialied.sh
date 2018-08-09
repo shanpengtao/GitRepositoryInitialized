@@ -1,5 +1,6 @@
 #!/bin/sh
 
+echo " "
 echo "~~~~~~~~~~~~~~~~开始初始化~~~~~~~~~~~~~~~~"
 
 #输入目录及git地址
@@ -21,7 +22,9 @@ git pull --rebase origin master
 #本地代码push到远程仓库的master分支上 -u是由于第一次上传时远程仓库为空
 git push -u origin master
 
-echo "本地git仓库路径：$path, 远程git仓库地址：$url"
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+echo "本地git仓库路径：$path"
+echo "远程git仓库地址：$url"
 git status
-
 echo "~~~~~~~~~~~~~~~~初始化git成功~~~~~~~~~~~~~~~~"
+echo " "
